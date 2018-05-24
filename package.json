@@ -1,0 +1,17 @@
+{
+  "name": "nick-palindrome",
+  "version": "1.0.0",
+  "description": "Just a test",
+  "main": "palindrome.js",
+  "scripts": {
+    "test": "/Users/Carbonara/Desktop/js-stuff/palindrome/test/test.js"
+  },
+  "keywords": [
+    "Test"
+  ],
+  "author": "Nick",
+  "license": "ISC",
+  "directories": {
+    "test": "test"
+  }
+}
