@@ -4,13 +4,23 @@ let Phrase = require("../index.js")
 describe("Phrase", function() {
 	describe("#palindrome", function() {
 		it("should return false for a non-palindorme", function() {
-			let nonPanlindrome = new Phrase("apple");
+			let nonPalindrome = new Phrase("apple");
 			assert(!nonPalindrome.palindrome());
 		});
 
-		it("shoudl return true for a palindrome", function() {
+		it("should return true for a palindrome", function() {
 			let plainPalindrome = new Phrase("racecar");
 			assert(plainPalindrome.palindrome());
+		});
+
+		it("should return true for a mixed-case palindrome", function() {
+			let mixedPalindrome = new Phrase("RaCeCaR");
+			assert(mixedPalindrome.palindrome());
+		});
+
+		it("should return true for a palindrome with punctuation", function() {
+			let puncPalindrome = new Phrase("Madam, I'm Adam.");
+			assert(puncPalindrome.palindrome());
 		});
 	})
 })

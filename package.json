@@ -4,7 +4,7 @@
   "description": "Just a test",
   "main": "palindrome.js",
   "scripts": {
-    "test": "/Users/Carbonara/Desktop/js-stuff/palindrome/test/test.js"
+    "test": "mocha"
   },
   "keywords": [
     "Test"
@@ -13,5 +13,13 @@
   "license": "ISC",
   "directories": {
     "test": "test"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarthPasta/nick-palindrome.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DarthPasta/nick-palindrome/issues"
+  },
+  "homepage": "https://github.com/DarthPasta/nick-palindrome#readme"
 }
