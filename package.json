@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/DarthPasta/nick-palindrome/issues"
   },
-  "homepage": "https://github.com/DarthPasta/nick-palindrome#readme"
+  "homepage": "https://github.com/DarthPasta/nick-palindrome#readme",
+  "dependencies": {
+    "mhartl-palindrome": "^0.2.1"
+  }
 }
