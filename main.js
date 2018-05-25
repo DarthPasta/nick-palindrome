@@ -1,10 +1,22 @@
 let Phrase = require("mhartl-palindrome");
-let string = prompt("Please enter a string for palindrome testing:");
 
-let phrase = new Phrase(string);
+function palindromeTester() {
+	let string = prompt("Please enter a string for palindrome testing:");
+	let phrase = new Phrase(string);
+	let palindromeResult = document.querySelector("#palindromeResult");
 
-if (phrase.palindrome()) {
-	alert(`"${phrase.content} is a palindrome!"`)
-} else {
-	alert(`"${phrase.content} is not a palindrome!"`)
+	if (phrase.palindrome()) {
+		palindromeResult.innerHTML = "<strong>" + `"${phrase.content}" is a palindrome!` + "</strong>";
+	} else {
+		palindromeResult.innerHTML = "<strong>" + `"${phrase.content}" is not a palindrome!` + "</strong>";
+	}
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+
+	let button = document.querySelector("#palindromeTester");
+
+	button.addEventListener("click", function() {
+		palindromeTester();
+	});
+})
